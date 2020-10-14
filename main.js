@@ -1,5 +1,3 @@
-//$('.datepicker').datepicker()
-
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -14,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ],
       select:function(selectionInfo){
           $('.modal').modal()
-          $('#save').click(function(){
+          $(document).off('click','#save').on('click','#save',function(){
             let title = $('#title').val()
             let event = {
               title:title,
