@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             calendar.addEvent(event);
             $('#title').val(null);
             calendar.unselect()
+            $.modal.close()
 
           })
           
