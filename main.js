@@ -19,9 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
               end:selectionInfo.endStr,
               color
           }
+          if(title ===''){
+            console.log('empty');
+          }else{
             calendar.addEvent(event);
             $('#title').val(null);
             $.modal.close()
+          }
+
+            
 
           })
           
