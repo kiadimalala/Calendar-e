@@ -27,17 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
             $.modal.close()
           }
 
-            
-
           })
-          
-      },
-      
-      
-    
+      }, 
     });
-    
-   
+  
     calendar.render();
    
  });
