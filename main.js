@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -15,20 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
           $('.modal').modal()
           $('#save').click(function(){
             let title = $('#title').val()
-            calendar.addEvent({
-                title:title,
-                start:selectionInfo.startStr,
-                end:selectionInfo.endStr
-            }) 
-            $('.modal').modal({
-                closeExisting: true
-            })
-          })
-          $('#title').val(null)
-          
+            let event = {
+              title:title,
+              start:selectionInfo.startStr,
+              end:selectionInfo.endStr
+          }
+            calendar.addEvent(event);
+            $('#title').val(null);
+            calendar.unselect()
 
+          })
+          
          
+          
       }
+      
     
     });
     
