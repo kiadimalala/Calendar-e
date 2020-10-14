@@ -3,13 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
       selectable:true,
-      events:[
-        {
-            id: 'a',
-            title: 'my event',
-            start: '2020-10-01'
-          }
-      ],
+      events:[],
       select:function(selectionInfo){
           $('.modal').modal()
           $(document).off('click','#save').on('click','#save',function(){
