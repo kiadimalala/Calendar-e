@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" href="./css/jquery-ui.css">
     <link href='./css/fullcalendar/main.css' rel='stylesheet' />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     
     
@@ -19,12 +19,23 @@
             <h1>Titre</h1>
             <input id="title" class="border bg-gray-300 focus:outline-none pl-1" type="text">
             <h1>Description</h1>
-            <textarea class="bg-gray-300 focus:outline-none pl-1" name="description" id="" cols="5" rows="4"></textarea>
+            <textarea class="description bg-gray-300 focus:outline-none pl-1" name="description" id="" cols="5" rows="4"></textarea>
             <!-- <h1>Du</h1> -->
             <!-- <input type="datepicker" class="datepicker bg-gray-300 focus:outline-none pl-1"> -->
             <div class="form__action my-2 w-full">
                 <button id="save" class="mr-1 bg-blue-500 p-1 w-20 text-gray-200 focus:outline-none ">Save</button>
-                <a href="#" rel="modal:close"><button id="save" class="mr-1 bg-gray-500 p-1 w-20 text-gray-200 ">Close</button></a>
+                <a href="#" rel="modal:close"><button id="save" class="mr-1 bg-gray-500 p-1 w-20 text-gray-200  ">Close</button></a>
+            </div>
+            <!-- Popover -->
+            <div class="tooltip hidden bg-pink-600 border-0 ml-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words rounded-lg" id="popover-id">
+              <div>
+                <div class="bg-pink-600 text-white opacity-75 font-semibold p-3 mb-0 border-b border-solid border-gray-200 uppercase rounded-t-lg">
+                  pink popover title
+                </div>
+                <div class="text-white p-3">
+                  And here's some amazing content. It's very engaging. Right?
+                </div>
+              </div>
             </div>
         </div>
      </div>
@@ -32,14 +43,10 @@
 
    
   </body>
-  
+ 
   <script src='./js/jquery.js'></script>
   <script src='./js/jquery-ui.js'></script>
   <script src='./js/fullcalendar/main.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-  
- 
- 
-  
   <script type="module" src="./main.js"> </script>
 </html>
